@@ -1,0 +1,37 @@
+{
+  "name": "@sensethenlove/get-form-entries",
+  "version": "1.0.0",
+  "author": "Sense Then Love",
+  "license": "MIT",
+  "type": "module",
+  "types": "./lib/index.d.ts",
+  "homepage": "https://github.com/sensethenlove/get-form-entries#readme",
+  "description":  "Recieves Form Data & responds with an Object",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "pnpm tsc",
+    "live": "pnpm build && npm publish --access public"
+  },
+  "keywords": [
+    "form",
+    "data",
+    "entries",
+    "object",
+    "typescript"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensethenlove/get-form-entries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sensethenlove/get-form-entries/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
