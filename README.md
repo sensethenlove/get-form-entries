@@ -6,6 +6,8 @@
 * Converts `<input name="foo" value="bar" />` into `{ foo: 'bar' }`
 * Converts `<input name="image" />` into `{ image: File }`
 * Converts `<input name="images" multiple />` into `{ images: File[] }`
+* If the input support multiple but only 1 file is uploaded => `{ image: File }`
+* An array is used for a response value only if multiple files share the same form name (example below)
 
 
 ### ☯️ Install
@@ -22,7 +24,7 @@ const fields = getFormEntries(formData)
 
 
 ### 🧡 Example: FormData (request)
-```json
+```
   FormData <entries>
     0: message → "Hello World!"
 ​​    1: images → File
